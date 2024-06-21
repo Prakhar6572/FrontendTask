@@ -9,7 +9,17 @@ const ReadOnlyRow = ({ contact, handleEditClick, handleDeleteClick }) => {
       <td>
         <button
           type="button"
-          onClick={(event) => handleEditClick(event, contact)}
+          onClick={(event) => handleEditClick(event, contact)} 
+          style={{backgroundColor:'rgb(78, 177, 235)',color:'#ffffff',fontSize:'20px',
+            width: '100px',
+            height: '36px',
+            paddingLeft: '1px',
+            paddingTop: '5px',
+            paddingBottom: '5px',
+            paddingRight: '1px',
+            border: 'none',
+            borderRadius: '5px',
+            textAlign: 'center',}}
         >
           Edit
         </button>
@@ -18,7 +28,16 @@ const ReadOnlyRow = ({ contact, handleEditClick, handleDeleteClick }) => {
         if (confirmBox === true) {
         handleDeleteClick(contact.id)
     }
-    }}>
+    }} style={{backgroundColor:'rgb(237, 54, 54)',color:'#ffffff',fontSize:'20px',
+      width: '100px',
+      height: '36px',
+      paddingLeft: '1px',
+      paddingTop: '5px',
+      paddingBottom: '5px',
+      paddingRight: '1px',
+      border: 'none',
+      borderRadius: '5px',
+      textAlign: 'center'}} >
           Delete
         </button>
       </td>
