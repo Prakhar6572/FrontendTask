@@ -3,6 +3,7 @@ import "./App.css"
 import data from "./mock-data.json"
 import ReadOnlyRow from './components/ReadOnlyRow';
 import EditableRow from './components/EditableRow';
+// import validator from 'validator';
 const App = () => {
   const [contacts, setContacts] = useState(data);
   const [addFormData, setAddFormData] = useState({
@@ -70,6 +71,7 @@ const App = () => {
     setEditContactId(contact.id);
 
     const formValues = {
+      Id:contact.id,
       name: contact.name,
       email: contact.email,
     };
@@ -89,15 +91,18 @@ const App = () => {
     setContacts(newContacts);
   };
   return (
-    <div className='app'>
+    <div>
       <div className='container'>
       <h4>Add</h4>
-        <input type='text' name='name' required placeholder='Enter a Name' onChange={handleAddFormChange}/><br/>
-        <input type='text' name='email' required placeholder='Enter a Email' onChange={handleAddFormChange}/><br/>
-        <button type='submit 'onClick={handleAddFormSubmit}>Add User</button>
+        <form onSubmit={handleAddFormSubmit}>
+        <input type='text' name='name'  placeholder='Enter a Name' onChange={handleAddFormChange} style={{width:'450px'}} required="required"/><br/>
+        <input type='text' name='email'  placeholder='Enter a Email' style={{width:'450px'}} pattern="/^[A-Z0-9. _%+-]+@[A-Z0-9. -]+\. [A-Z]{2,}$/i ." onChange={handleAddFormChange} required="required"/><br/>
+        <button type='submit ' id='in'>Add</button>
+        </form>
       </div>
     <div className='app-container'>
     <form onSubmit={handleEditFormSubmit}>
+      <div className='cont'>
       <table>
         <thead>
           <tr>
@@ -123,6 +128,7 @@ const App = () => {
           ))}
         </tbody>
       </table>
+      </div>
       </form>
     </div>
     </div>
