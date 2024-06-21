@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+## LEVELS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Level 1 
+- Add CSS:
+	- [ ✅] Convert the displayed data into an HTML table.
+	- [✅ ] Ensure there is appropriate spacing and padding between table elements for better readability [refer screenshot].
+- Fix Existing Issues:
+	- [✅ ] The "Add User" button is currently not functioning. Identify the issue and fix it so that new users can be added.
+	- [✅ ] Ensure that both the name and email fields are not left empty and contain valid values before submission.
+	- [✅ ] Implement validation for the email field to ensure that only valid email addresses are accepted.
+### Level 2
+- Integrate Antd components
+	- [ ✅] Table: Use Ant Design's table component to display the data.
+	- [✅ ] Buttons: Replace existing buttons with Ant Design's button components.
+	- [✅ ] Inputs: Use Ant Design's input components for forms.
+- Fix Existing Issues: 
+	- [✅ ] Form Reset on Submission: Ensure that after submitting the form, the values in the name and email input fields are cleared.
 
-## Available Scripts
+### Level 3
+- Add delete functionality:
+	- [ ✅] Delete for Each User: Implement a delete feature for each user entry
 
-In the project directory, you can run:
+### Level 4
+- Add edit functionality:
+	- [✅ ] Edit for Each User: Implement a edit feature for each user entry
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Bonus level
+- [ ] Maintain separate reducer - create and manage a separate reducer for storing the details of the currently edited user.
+- [✅ ] Add Confirmation for Deletion - implement a confirmation dialog that asks for user approval before deleting a user entry.
