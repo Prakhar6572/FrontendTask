@@ -15,6 +15,7 @@ const EditableRow = ({
           name="Id"
           value={editFormData.Id}
           onChange={handleEditFormChange}
+          style={{width:'100px'}}
         ></input>
         </td>
         <td>
@@ -25,6 +26,7 @@ const EditableRow = ({
           name="name"
           value={editFormData.name}
           onChange={handleEditFormChange}
+          style={{width:'250px'}}
         ></input>
       </td>
       <td>
@@ -35,11 +37,22 @@ const EditableRow = ({
           name="email"
           value={editFormData.email}
           onChange={handleEditFormChange}
+          style={{width:'450px'}}
         ></input>
       </td>
       <td>
-        <button type="submit">Save</button>
-        <button type="button" onClick={handleCancelClick}>
+        <button type="submit" style={{backgroundColor:'rgb(78, 177, 235)',color:'#ffffff',fontSize:'20px',
+    width: '100px',
+    height: '36px',
+    border: 'none',
+    borderRadius: '5px',
+    textAlign: 'center',}}>Save</button>
+        <button type="button" style={{backgroundColor:'rgb(237, 54, 54)',color:'#ffffff',fontSize:'20px',
+    width: '100px',
+    height: '36px',
+    border: 'none',
+    borderRadius: '5px',
+    textAlign: 'center'}} onClick={handleCancelClick}>
           Cancel
         </button>
       </td>
