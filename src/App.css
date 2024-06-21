@@ -1,29 +1,13 @@
-*{
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.app{
-  align-items: center;
-  justify-content: center;
-  display: block;
-}
 .app-container {
-  display: block;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
   padding: 1rem;
-  align-items: center;
-  text-align: center;
 }
-
 table {
   border-collapse: collapse;
-  width: 60%;
-  align-items: center;
-  text-align: center;
-  padding-top: 10%;
-  margin-left:21% ;
-  
+  width: 80%;
+  margin-left: 300px;
 }
 
 th,
@@ -31,11 +15,14 @@ td {
   border: 1px solid #ffffff;
   text-align: left;
   padding: 8px;
-  font-size: 32px;
+  font-size: 26px;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 }
-
+.cont{
+  align-items: center;
+  justify-content: center;
+}
 th {
   background-color: rgb(117, 201, 250);
 }
@@ -43,15 +30,10 @@ th {
 td {
   background-color: rgb(205, 235, 253);
 }
-form .container{
-  display: block;
-}
 
 form {
   display: flex;
   gap: 5px;
-  align-items: center;
-  text-align: center;
 }
 
 form td:last-child {
@@ -62,12 +44,50 @@ form td:last-child {
 form * {
   font-size: 28px;
 }
-.container{
-  border: 1px solid #ffffff;
-  text-align: left;
-  padding: 8px;
-  font-size: 32px;
+.container button{
+  font-size: 20px;
+  width: 150px;
+  height: 36px;
+  padding-left: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 1px;
+  border: none;
+  border-radius: 5px;
   text-align: center;
+  background-color:rgb(78, 177, 235);
+  color: #ffffff;
   align-items: center;
-  margin-top: 150px ;
+  justify-content: center;
+  margin-left: 110px;
+}
+.container form{
+  display: flex;
+  flex-direction: column;
+}
+.container form input{
+  margin-bottom: 5px;
+  width: fit-content;
+}
+.app-container button{
+    font-size: 20px;
+    width: 150px;
+    height: 36px;
+    padding-left: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 1px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+h4{
+  font-size: 36px;
+  color: rgb(122, 126, 129);
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
