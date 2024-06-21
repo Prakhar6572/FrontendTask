@@ -10,9 +10,9 @@
 	- [✅ ] Implement validation for the email field to ensure that only valid email addresses are accepted.
 ### Level 2
 - Integrate Antd components
-	- [ ✅] Table: Use Ant Design's table component to display the data.
-	- [✅ ] Buttons: Replace existing buttons with Ant Design's button components.
-	- [✅ ] Inputs: Use Ant Design's input components for forms.
+	- [] Table: Use Ant Design's table component to display the data.
+	- [] Buttons: Replace existing buttons with Ant Design's button components.
+	- [] Inputs: Use Ant Design's input components for forms.
 - Fix Existing Issues: 
 	- [✅ ] Form Reset on Submission: Ensure that after submitting the form, the values in the name and email input fields are cleared.
 
